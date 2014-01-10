@@ -45,9 +45,3 @@ body {
     transform: rotate(-3deg);
 	z-index: -1;
 }
-
-@keyframes myfirst
-{
-	from {top: 0px;}
-	to {top: 100px;}
-}
