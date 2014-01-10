@@ -100,7 +100,7 @@
 		t = global.setInterval(function () { //no transform support - repainting occurs
 			if (!browser && innerBoxBounding.bottom < parentBoxBounding.bottom
 					&& innerBoxBounding.right < parentBoxBounding.right) {
-				innerBox.style.backgroundColor = "red";
+				//innerBox.style.backgroundColor = "red";
 				innerBox.style.bottom = -i + "px";
 				innerBox.style.right =  -i + "px";
 				parentBoxBounding = parentBox.getBoundingClientRect();
@@ -108,7 +108,7 @@
 				i += 1;
 			} else if (browser && i <= (parseInt(parentBox.style.width, 10) - parseInt(innerBox.style.width, 10))
 					&& i <= (parseInt(parentBox.style.width, 10) - parseInt(innerBox.style.width, 10))) {
-				innerBox.style.backgroundColor = "green";
+				//innerBox.style.backgroundColor = "green";
 				innerBox.style["-webkit-transform"] = "translate(" + i + "px, " + i + "px)";
 				innerBox.style.transform = "translate(" + i + "px, " + i + "px)";
 				i += 1;
